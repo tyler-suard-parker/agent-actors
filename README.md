@@ -57,8 +57,10 @@ from agent_actors import (
 
 ## Run Agent Actors
 
-3. Modify [`test_system.py`](./agent_actors/test_system.py) to your own needs
-4. Run `poetry run pytest -s -k 'test_name_str_to_filter_by'`
+NOTE: You MUST include your OpenAI API Key (openai.com), your Wolfram Alpha API Key, and Serper API Key (Serper.dev) in your environment variables.
+
+1. Modify [`test_system.py`](./agent_actors/test_system.py) to your own needs
+2. Run `poetry run pytest -s -k 'test_system.py'`
 
 You can also run all tests with `poetry run pytest`, but this may take a while to execute, and is likely to hit into API rate limits.
 
